@@ -124,6 +124,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AgenceSpacial.cpp" />
+    <ClCompile Include="BlueFaction.cpp" />
+    <ClCompile Include="Faction.cpp" />
+    <ClCompile Include="Guerre.cpp" />
+    <ClCompile Include="Livraison.cpp" />
+    <ClCompile Include="RedFaction.cpp" />
+    <ClCompile Include="Transport.cpp" />
+    <ClCompile Include="Vaisseau.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlueFaction.h" />
+    <ClInclude Include="Faction.h" />
+    <ClInclude Include="Guerre.h" />
+    <ClInclude Include="Livraison.h" />
+    <ClInclude Include="RedFaction.h" />
+    <ClInclude Include="Transport.h" />
+    <ClInclude Include="Vaisseau.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,7 +10,6 @@ Faction::Faction(int att, int def, int vie, int capacite) :attaque(att), defense
 }
 
 Faction :: ~Faction(){}
-
 std::string Faction::to_string()
 {
 	std::string info;
@@ -18,7 +17,7 @@ std::string Faction::to_string()
 	info.append("Attaque :" + std::to_string(this->attaque) + "\n");
 	info.append("Defense :" + std::to_string(this->defense) + "\n");
 	info.append("Vie :" + std::to_string(this->vie) + "\n");
-	info.append("Capacité:" + std::to_string(this->capacite) + "\n");
+	info.append("Capacite:" + std::to_string(this->capacite) + "\n");
 	return info;
 
 }

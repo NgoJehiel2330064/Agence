@@ -17,6 +17,15 @@ public:
 	Faction(string nom,int att,int def,int vie,int capacite);
 	Faction(int att, int def, int vie, int cap);
 	~Faction();
+	int getAttaque()
+	{
+		return attaque;
+	}
+	int getDefense()
+	{
+		return defense;
+	}
+
 	string getNom()
 	{
 		return nom;

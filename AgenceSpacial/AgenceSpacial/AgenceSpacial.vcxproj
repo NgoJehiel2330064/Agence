@@ -126,19 +126,25 @@
     <ClCompile Include="AgenceSpacial.cpp" />
     <ClCompile Include="BlueFaction.cpp" />
     <ClCompile Include="Faction.cpp" />
+    <ClCompile Include="FactoryVaisseau.cpp" />
     <ClCompile Include="Guerre.cpp" />
     <ClCompile Include="Livraison.cpp" />
     <ClCompile Include="RedFaction.cpp" />
+    <ClCompile Include="Station.cpp" />
     <ClCompile Include="Transport.cpp" />
+    <ClCompile Include="Utilitaire.cpp" />
     <ClCompile Include="Vaisseau.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlueFaction.h" />
     <ClInclude Include="Faction.h" />
+    <ClInclude Include="FactoryVaisseau.h" />
     <ClInclude Include="Guerre.h" />
     <ClInclude Include="Livraison.h" />
     <ClInclude Include="RedFaction.h" />
+    <ClInclude Include="Station.h" />
     <ClInclude Include="Transport.h" />
+    <ClInclude Include="utilitaire.h" />
     <ClInclude Include="Vaisseau.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

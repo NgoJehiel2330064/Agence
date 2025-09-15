@@ -1,11 +1,22 @@
 #include "Transport.h"
 Transport::Transport(string nom, int valeur, int attaque, int defense, int vie, int capacite, int niveau, int exp, bool livre)
-	:Vaisseau(nom, valeur, attaque, defense, vie, capacite, niveau, exp), livre(livre)
+	:Vaisseau(nom, valeur, attaque, defense, vie, capacite, niveau, exp), livre(livre) {}
+
+Transport::Transport(string nom, int valeur, int attaque, int defense, int vie, int capacite, int niveau, int exp, bool livre,Faction*fact)
+	:Vaisseau(nom, valeur, attaque, defense, vie, capacite, niveau, exp,fact), livre(livre) 
+{
+	
+}
+
+Transport::Transport(string nom, int valeur, int attaque, int defense, int vie, int capacite, int niveau, int exp, Faction* fact)
+	:Vaisseau(nom, valeur, attaque, defense, vie, capacite, niveau, exp, fact), livre(false)
 {
 
 }
 
 Transport::~Transport() {}
+
+Transport::Transport(Faction* fact) : Vaisseau(fact){}
 
 bool Transport::EstLivre()
 {

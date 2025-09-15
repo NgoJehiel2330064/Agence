@@ -5,7 +5,20 @@ Guerre::Guerre(string nom, int valeur, int attaque, int defense, int vie, int ca
 
 }
 
+Guerre::Guerre(Faction* fact) : Vaisseau(fact)
+{}
+
+
+Guerre::Guerre(string nom, int valeur, int attaque, int defense, int vie, int capacite, int niveau, int exp, Faction* faction)
+	:Vaisseau(nom, valeur, attaque, defense, vie, capacite, niveau, exp, faction), modeGuerre(false)
+{
+}
+
+
 Guerre::~Guerre() {}
+
+
+
 
 bool Guerre::IraEnGuerre()
 {
@@ -18,6 +31,7 @@ std::string Guerre::to_string()
 {
 	std::string message = Vaisseau::to_string();
 
-	message.append("Je suis un vaisseau de Guerre\n");
+
+	message.append("Je suis un vaisseau de Guerre.\n");
 	return message;
 }
